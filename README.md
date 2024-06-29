@@ -44,8 +44,11 @@ python youtube_downloader.py
 4. Para downloads do YouTube, escolha o diretório onde deseja salvar o arquivo baixado.
 
 
+## Contribuição
+Contribuições são bem-vindas! Por favor, faça um fork do repositório e envie um pull request para quaisquer alterações.
 
-
+## Aviso
+Este projeto é apenas para fins educacionais. Por favor, respeite os termos de serviço do YouTube e de qualquer outro site onde você baixar conteúdo.
 
 
 
