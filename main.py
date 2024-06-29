@@ -3,7 +3,7 @@ from pytube import YouTube
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import requests
-def baixarVideo(url, tipo, caminho=0):
+def baixarVideo(url, tipo, caminho=0): #Corrigir problema "Baixando vídeo em qualidade baixa"
     try:
         yt = YouTube(url)
         if tipo == "video":
@@ -52,7 +52,7 @@ def baixar_arquivo(url, tipo):
     except requests.exceptions.RequestException as e:
         label_status.config(text=f"Erro no download: {e}")
 
-def baixarAudio():
+def baixarAudio(): #Corrigir problema "baixando apenas audio em mp4"
     url = entry_url.get()
     if url:
         if "youtube.com" in url or "youtu.be" in url:
@@ -66,7 +66,7 @@ def baixarAudio():
     else:
         label_status.config(text="insira uma URL")
 
-def baixar_video():
+def baixar_video(): #Retorna o download
     url = entry_url.get()
     if url:
         if "youtube.com" in url or "youtu.be" in url:
@@ -81,7 +81,7 @@ def baixar_video():
         label_status.config(text="Insira uma URL")
 
 
-root = tk.Tk()
+root = tk.Tk() #cria painel de download
 root.title("Youtube Download")
 
 # URL
